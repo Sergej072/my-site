@@ -1,0 +1,27 @@
+/*
+* Template Name: Schooll
+* Template Author: Gelser
+* Template License: 
+* Author URI: 
+
+* Twitter: 
+* Facebook: 
+*/
+
+
+// Переменные, миксины, функции
+// @import "helpers/variables";
+// @import "helpers/mixins";
+@import "helpers/functions";
+
+// CSS-файлы библиотек
+// @import "vendor/libs";
+
+// Основное
+@import "base/fonts";
+@import "base/normalize";
+@import "base/general";
+@import "base/site-base";
+
+// БЭМ-блоки
+@import "../blocks/_modules";

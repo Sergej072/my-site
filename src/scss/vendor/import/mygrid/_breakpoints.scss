@@ -1,0 +1,57 @@
+.breakpoints {
+  border-left: 5px solid #333;
+  border-right: 5px solid #333;
+  min-height: 100vh;
+  min-width: 280px;
+
+  @include media-breakpoint-up('xs') {
+    background-color: #fffadd;
+  }
+
+  @include media-breakpoint-up('sm') {
+    background-color: #fed6bc;
+  }
+
+  @include media-breakpoint-up('md') {
+    background-color: #def7fe;
+  }
+
+  @include media-breakpoint-up('lg') {
+    background-color: #e7ecff;
+  }
+
+  @include media-breakpoint-up('xl') {
+    background-color: #c6d8ff;
+  }
+  
+  @include media-breakpoint-up('xxl') {
+    background-color: #c3fbd8;
+  }
+
+  &::before {
+    display: block;
+    text-align: center;
+    font-size: 150px;
+
+    @include media-breakpoint-up('xs') {
+        content: "xs <576px";        
+      }
+
+    @include media-breakpoint-up('sm') {
+        content: "sm ≥576px";
+      }
+    @include media-breakpoint-up('md') {
+        content: "md ≥768px";
+      }
+    @include media-breakpoint-up('lg') {
+        content: "lg ≥992px";
+      }
+    @include media-breakpoint-up('xl') {
+        content: "xl ≥1200px";
+      }
+
+    @include media-breakpoint-up('xxl') {
+        content: "xxl ≥1400px";
+      }
+  }
+}

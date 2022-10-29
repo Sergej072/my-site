@@ -1,0 +1,60 @@
+// Количество колонок
+// $grid-columns: 12;
+// Желоба сеток
+// $grid-gutter-width: 3rem;
+
+//  Контрольные точки
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+  // xxxl: 1600px
+);
+// Максимальная ширина контейнера
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+  // xxxl: 1600px
+);
+// Монтаж своего миксина для фиксации ширины контейнеров
+@mixin make-max-width-container($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint, $max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      // max-width: $max-width;
+      max-width: 1320px;
+    }    
+  }
+} 
+
+.container {
+  @include make-container();
+  @include make-max-width-container();
+}
+
+// Подключение своих миксинов
+@import 'mymixin.scss';
+
+// Подключение сетки Bootstrap из scss
+// @import 'bootstrap/bootstrap';
+@import '../bootstrap/bootstrap-grid.scss';
+
+// @import '../bootstrap/functions';
+// @import '../bootstrap/variables';
+// @import '../bootstrap/mixins/breakpoints';
+// @import '../bootstrap/mixins/container';
+// @import '../bootstrap/mixins/grid';
+
+
+// Подключение сетки Bootstrap из node_modules
+// @import '../../../node_modules/bootstrap/scss/bootstrap';
+// @import '../../../node_modules/bootstrap/scss/functions';
+// @import '../../../node_modules/bootstrap/scss/variables';
+// @import '../../../node_modules/bootstrap/scss/mixins/breakpoints';
+// @import '../../../node_modules/bootstrap/scss/mixins/container';
+// @import '../../../node_modules/bootstrap/scss/mixins/grid';
