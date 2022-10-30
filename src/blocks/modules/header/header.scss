@@ -18,7 +18,7 @@
     color: $body-color;
     font-weight: $body-font-weight;
     &-green {
-      color: #45B871;
+      color: $green-color;
     }
   }
   &-nav-main {
@@ -35,7 +35,7 @@
         cursor: default;
       }    
       &:hover {
-        color: #45B871;
+        color:$green-color;
       }
     }    
     &-btn {
@@ -45,7 +45,7 @@
       font-size: 20px;
       font-weight: 600;    
       &:hover {
-        color: #45B871;    
+        color:$green-color;    
         &::after {
           background: url(../images/arrow-green.svg) 50%/100% no-repeat;
         }
@@ -70,7 +70,7 @@
     gap: 40px;
     &__log {
       &:hover {
-        color: #45B871;
+        color: $green-color;
       }
     }
     &__item {
