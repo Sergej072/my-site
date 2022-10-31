@@ -230,7 +230,7 @@
   }
 }
 
-// Courses
+// Courses-section
 
 #courses-section {
   padding: 75px 0 105px;
@@ -394,3 +394,157 @@
   }
 }
 
+// Feedback-section
+
+#feedback-section {
+  padding: 150px 0 140px;
+}
+
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  gap: 78px;
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 58px;
+    font-weight: 600;    
+    line-height: 74px;    
+    color: #424232;
+  }
+  &-main {
+    &-card {
+      background: #FFF;
+      max-width: 700px;
+      padding: 82px 52px;
+      border-radius: 15px;
+      border: 1px solid rgba(231, 231, 231, 0.7);
+      box-shadow: 30px 30px 70px rgba(99, 98, 98, 0.06);
+    }    
+    &__img {
+      width: 125px;
+      height: 125px;
+      margin-bottom: 30px;
+      border-radius: 50%;
+      border: 3px solid #45B871;
+    }
+    &__text {
+      margin-bottom: 60px;
+      width: 591px;
+      color: #8C8E90;
+      font-size: 28px;
+      font-weight: 400;      
+      line-height: 40px;
+    }
+    &__name {
+      display: block;
+      margin-bottom: 32px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+      font-weight: 600;        
+      line-height: 10px;      
+      color: #242323;
+    }
+    &__job {     
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 400;      
+      line-height: 1px;      
+      color: #636262;
+    }    
+  }
+  &-others {    
+    &__img {
+      width: 82px;
+      height: 82px;
+      margin-bottom: 30px;
+      border-radius: 50%;
+      border: 1px solid #45B871;
+    }
+    &__text {
+      margin-bottom: 50px;
+      width: 559px;
+      color: #8C8E90;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+    &__name {
+      display: block;
+      margin-bottom: 19px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 6px;
+      color: #242323;
+    }
+    &__job { 
+      display: block;
+      margin-bottom: 50px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1px;
+      color: #636262;
+    }
+  }
+  &-card { 
+    padding: 50px 38px;
+    border: 1px solid rgba(231, 231, 231, 0.7);
+    border-radius: 15px;    
+    &:first-child {
+      margin-bottom: 50px;
+    }  
+  }  
+}
+
+// Trial-section
+
+#trial-section {
+  margin-bottom: 110px;  
+}
+
+.trial {
+  padding: 105px 0;
+  color: #fff;
+  background: url(../img/trial-bg.jpg) 0%/cover no-repeat;  
+  &__text {
+    max-width: 725px;
+    margin: 0 auto 50px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 68px;
+    text-align: center;
+  }
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;        
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 15px;    
+    &__secondary {
+      width: 150px;
+      padding: 15px 0;
+      color: #fff;
+      border-radius: 5px;
+      border: 1px solid #FFF;
+      &:hover {
+        color: #242323;
+        background-color: #fff;
+      }      
+    }
+    &__primary {
+      width: 205px;
+      padding: 15px 0;
+      background-color: #fff;
+      border-radius: 5px;
+      color: #242323;
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }  
+}
