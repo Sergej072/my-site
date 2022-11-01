@@ -27,7 +27,10 @@ $container-max-widths: (
 // @import 'mymixin.scss';
 
 // Подключение сетки Bootstrap из scss
-@import 'bootstrap/bootstrap';
+@import '../../bootstrap/bootstrap';
+@import 'breakpoints';
+
+
 // @import '../bootstrap/bootstrap-grid.scss';
 
 // @import '../bootstrap/functions';

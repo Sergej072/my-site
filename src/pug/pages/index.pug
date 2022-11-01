@@ -1,7 +1,10 @@
 extends ./../layouts/main.pug
 
-block variables
-    - const title = "Главная";
+append config
+    - var myTitle = 'Your Logo'
+    - var myDesc = 'Верстка странички с видео ютуб'
+    - var Bootstrap5 = false 
 
-//- block content
-    
+
+append content    
+    include ./../sections/bloksMain/_B5setka.pug

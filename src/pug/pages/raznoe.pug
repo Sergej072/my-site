@@ -1,0 +1,11 @@
+extends ./../layouts/main.pug
+
+append config
+    - var myTitle = 'Navbar-fixed'
+    - var myDesc = 'Верстка проекта с PUG и новым GULP'
+    - var Bootstrap5 = true
+
+
+append content    
+    include ./../../blocks/navbar-fixed/navbar-fixed.html
+    
