@@ -23,12 +23,12 @@ html(lang=lang)
                 link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined")
             link(rel="stylesheet", href="css/main.css")        
     body
-        include ./../sections/_header.pug
+        include ./../sections/header/_header.pug
         main(role='main')
             //- content here
             block content
         
-        //- include ./../sections/_footer.pug
+        //- include ./../sections/footer/_footer.pug
         block scripts
             if jQuery3
                 script(src="https://code.jquery.com/jquery-3.6.1.slim.min.js"    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous")

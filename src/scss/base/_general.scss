@@ -24,27 +24,24 @@ $body-font-size: 14px;
 $body-font-weight: 400;
 $body-line-height: 15px;
 $body-text-align: start;
-$body-color: #242323;
+$body-color: #22262A;
 $body-bg: #fff;
 
 $white-bg: #E5E5E5;
 $green-bg: #E4F5EB;
-$green-color: #45B871;
 
 $opensans-font-family: 'Open Sans', sans-serif;
 $roboto-font-family: 'Roboto', sans-serif;
 $poppins-font-family: 'Poppins', sans-serif;
 
 // Для этого проекта
+$white-bg: #fff;
+$button-bg: #22262A;
 
 body {
-    font-size: $body-font-size;
-    font-family: $body-font-family;
-    font-weight: $body-font-weight;
-    line-height: $body-line-height;
-    text-align: $body-text-align;
     color: $body-color;
-    background-color: $body-bg;
+    background-color: $white-bg;
+    font: 400 15px/22px 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -61,12 +58,13 @@ li {
 
 img {
     max-width: 100%;
-    max-height: 100%;
+    // max-height: 100%;
 }
 
 button {
     display: block;
     border: none;
+    font: inherit;
     background-color: transparent;
     cursor: pointer;
     transition: .4s all ease;
@@ -75,20 +73,17 @@ button {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 5px;    
 }
 
-.btn-primary {
-    padding: 15px 0;
+.btn-primary {    
     color: #fff;
-    background: $green-color;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: 0px 8px 80px rgba(9, 188, 77, 0.2);
+    background-color: $button-bg;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
 
     &:hover {
-        background-color: #3c9f62;
+        background-color: #df51c9;
     }
 }

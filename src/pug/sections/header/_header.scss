@@ -1,0 +1,38 @@
+// Header
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  &__logo {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  &-nav {
+    &__item {
+      display: inline-block;
+      margin-right: 25px;
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: uppercase;
+      &:last-child {
+        margin-right: 0;
+      }      
+    }    
+  }
+  &-user {
+    &__item {
+      display: inline-block;
+      margin-right: 30px;      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  & a, button {
+    &:hover {
+      color: #df51c9;
+    }
+  } 
+}

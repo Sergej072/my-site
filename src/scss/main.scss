@@ -24,5 +24,11 @@
 @import "base/general";
 // @import "base/site-base";
 
+// Семантическая сетка
+// @import "base/_outline";
+
 // БЭМ-блоки
-@import "blocks/_modules";
+// @import "blocks/_modules";
+@import "../pug/sections/header/_header";
+@import "../pug/sections/bloksMain/_blockOne";
+// @import "../pug/sections/footer/_footer";

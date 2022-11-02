@@ -73,7 +73,7 @@ gulp.task('watch', function() {
 	watch( ['./build/js/**/*.*', './build/img/**/*.*'], gulp.parallel(browserSync.reload) );
 
 	// Запуск слежения и компиляции SCSS с задержкой
-	watch('./src/scss/**/*.scss', function(){
+	watch('./src/**/*.scss', function(){
 		setTimeout( gulp.parallel('scss'), 500 )
 	})
 
