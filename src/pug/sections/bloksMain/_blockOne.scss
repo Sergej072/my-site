@@ -1,12 +1,12 @@
 //  Первая секция центрального блока. Banner
 .banner {
+  width: 460px;
+  margin-left: auto;
   &-wrap {
   padding: 609px 0 100px;
   background: url(../../../img/home-bg.jpg) no-repeat;
   background-size: cover;  
-  }
-  width: 460px;
-  margin-left: auto;
+  }  
   &__text {
     display: block;
     font-size: 18px;

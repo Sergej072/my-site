@@ -1,54 +1,20 @@
-//  Четвертая секция центрального блока. STYLE
-#section-Four {
+//  Пятая секция центрального блока. TACHEN 19
+#section-Five {
   padding: 0;
 }
 
-.style {
-  display: flex;
-  justify-content: space-between;
-  height: 700px;
-  &-left {
-    width: 50%;
-    height: 100%;
-    background: url(../../../img/style-1.jpg) 50% 100%/550px no-repeat;
+.collection {   
+  margin-left: 0;
+  margin-right: auto;
+  &-wrap {
+    margin-top: 115px;    
+    background: url(../../../img/collection-bg.jpg) no-repeat;
+    background-size: cover;
   }
-  &-right {
-    position: relative;
-    width: 50%;
-    height: 100%;
-    background: url(../../../img/style-2.jpg) 60% 0%/515px no-repeat;
-    &::after {
-      position: absolute;
-      content: '';
-      bottom: 0;
-      right: 0;
-      width: 252px;
-      height: 303px;
-      background: #fff url(../../../img/style-3.jpg) 100% 100%/227px 281px no-repeat;
-    }
-  }
-  &__link {
-    position: absolute;
-    z-index: 2;
-    bottom: 50px;
-    right: 260px;
-    line-height: 22px;
-    &:hover {
-      color: #df51c9;
-      &::after {
-        background-color: #df51c9;
-      }      
-    }
-    &::after {
-      position: absolute;
-      content: '';
-      bottom: -5px;
-      right: 0;
-      width: 100%;
-      height: 1px;
-      background-color: #22262A;
-      transition: 0.4s all ease;
-    }
+  .banner-link {
+    display: block;
+    width: 215px;
+    margin-top: 10px;
+    text-align: center;
   }
 }
-
