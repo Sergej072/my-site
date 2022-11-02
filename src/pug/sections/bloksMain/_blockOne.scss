@@ -1,1 +1,33 @@
-//  Первая секция центрального блока
+//  Первая секция центрального блока. Banner
+.banner {
+  &-wrap {
+  padding: 609px 0 100px;
+  background: url(../../../img/home-bg.jpg) no-repeat;
+  background-size: cover;  
+  }
+  width: 460px;
+  margin-left: auto;
+  &__text {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;    
+    line-height: 27px;
+  }
+  &__trend {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 120px;
+  }
+  &-link {
+    width: 150px;
+    padding: 5px;
+    margin-right: 34px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &-link-wrap {
+    margin-top: 25px;   
+  }
+}
+
