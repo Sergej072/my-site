@@ -33,15 +33,18 @@ $green-bg: #E4F5EB;
 $opensans-font-family: 'Open Sans', sans-serif;
 $roboto-font-family: 'Roboto', sans-serif;
 $poppins-font-family: 'Poppins', sans-serif;
+$dm-sans-font-family: 'DM Sans', sans-serif;
+$mulish-font-family: 'Mulish', sans-serif;
 
 // Для этого проекта
 $white-bg: #fff;
 $button-bg: #22262A;
 
 body {
-    color: $body-color;
+    color: #696871;
     background-color: $white-bg;
-    font: 400 15px/22px 'Poppins', Arial, Helvetica, sans-serif;
+    padding: 0 5px;
+    font: 400 20px 'DM Sans', Arial, sans-serif;
 }
 
 a {
@@ -63,17 +66,20 @@ img {
 
 button {
     display: block;
+    width: 210px;
+    padding: 20px 0;
     border: none;
-    font: inherit;
-    background-color: transparent;
+    border-radius: 10px;
+    font: 700 17px 'DM Sans', Arial, sans-serif;
+    color: #fff;
+    // background-color: transparent;
     cursor: pointer;
     transition: .4s all ease;
 }
 
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 5px;    
+    max-width: 1100px;
+    margin: 0 auto;        
 }
 
 
