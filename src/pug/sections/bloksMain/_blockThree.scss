@@ -1,52 +1,38 @@
 //  Третья секция центрального блока. WOMEN’S, MEN’S FASHION
 #section-Three {
-  padding: 0;
+  padding-bottom: 140px;
 }
 
-.section {
-  &__title {
-    margin-top: 111px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 700;      
-    line-height: 30px;
-    text-align: center;
+.metrics {
+  display: flex;
+  justify-content: space-between;
+  &-right {
+    width: 350px;
   }
-  &__subtitle {
-    margin-bottom: 65px;
-    line-height: 22px;    
-    text-align: center;
-  }
-}
-
-.new-product {
-  width: 268px;
-  &-wrap {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__img {
-    margin-bottom: 38px;
-  }
-  &__brand {
-    display: block;    
-    font-weight: 300;
-    line-height: 22px;
-  }
-  &__link {
-    display: block;
-    margin: 3px 0;
-    font-weight: 600;
-    line-height: 22px;
-    &:hover {
-      color: #df51c9;
+  &-left {
+    width: 550px;
+    padding-top: 95px;
+    &__title {
+      margin-bottom: 30px;
+      font-size: 50px;
+      line-height: 57px;
+      font-weight: 700;
+      color: #19191B;
+    }
+    &__text {
+      width: 465px;
+      margin-bottom: 30px;
+      font-family: 'Mulish', sans-serif;
+      line-height: 30px;
+    }
+    &__link {
+      font-size: 17px;
+      line-height: 20px;
+      color: #5454D4;
+      transition: .4s all ease;
+      &:hover {
+        color: #ee5423;
+      }
     }
   }
-  &__price_old {
-    text-decoration: line-through;
-    margin-right: 30px;   
-  } 
-  &__price_new {
-    color: #CF2929;
-  } 
 }

@@ -1,57 +1,38 @@
 //  Вторая секция центрального блока. Category 
 #section-Two {
-  padding: 115px 0 0;
+  padding-bottom: 85px;
 }
 
-.category {
-  display: grid;
-  grid-template-areas:
-  "img1 img1 img4 img4"
-  "img2 img3 img4 img4";
-  gap: 25px;
-  &__link {
-    position: relative;
-    min-height: 380px;
-    cursor: pointer;
-    &:hover {
-      &::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(0 0 0 /50%);
-      }
-      .category__name {
-        opacity: 1;
-      }
-    }    
-    &:nth-child(1) {
-      grid-area: img1;
-      background: url(../../../img/category-1.jpg)50% 0%/cover no-repeat;
-    }
-    &:nth-child(2) {
-      grid-area: img2;
-      background: url(../../../img/category-2.jpg)50% 0%/cover no-repeat;
-    }
-    &:nth-child(3) {
-      grid-area: img3;
-      background: url(../../../img/category-3.jpg)50% 0%/cover no-repeat;
-    }
-    &:nth-child(4) {
-      grid-area: img4;
-      background: url(../../../img/category-4.jpg)50% 0%/cover no-repeat;
-    }
+.subscription {
+  display: flex;
+  justify-content: space-between;
+  &-left {
+    width: 350px;    
   }
-  &__name {
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
-    padding: 5px 20px;
-    font-size: 18px;
-    font-weight: 500; 
-    opacity: 0;         
-    background-color: #fff;
+  &-right {
+    width: 550px;
+    padding-top: 95px;
+    &__title {
+      margin-bottom: 30px;
+      font-size: 50px;
+      line-height: 57px;
+      font-weight: 700;
+      color: #19191B;
+    }
+    &__text {
+      width: 465px;
+      margin-bottom: 30px;
+      font-family: 'Mulish', sans-serif;
+      line-height: 30px;
+    }
+    &__link {
+      font-size: 17px;
+      line-height: 20px;
+      color: #5454D4;
+      transition: .4s all ease;
+      &:hover {
+        color: #ee5423;        
+      }
+    }
   }
 }
