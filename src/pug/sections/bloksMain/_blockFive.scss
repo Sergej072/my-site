@@ -1,4 +1,4 @@
-//  Пятая секция центрального блока. TACHEN 19
+//  Пятая секция центрального блока. PRODUCT
 #section-Five {
   padding-bottom: 150px;
 }
@@ -10,20 +10,23 @@
     align-items: center;
     margin-bottom: 80px;
   }
+
   &__text {
     display: block;
     width: 540px;
     font-size: 60px;
     font-weight: 700;
-    line-height: 70px;    
+    line-height: 70px;
     color: #19191B;
   }
+
   &__tabs {
     display: flex;
     justify-content: space-between;
     width: 320px;
     border-radius: 10px 10px 10px 10px;
     background-color: #F7F7FB;
+
     &-text {
       width: 50%;
       padding: 18px 0;
@@ -33,12 +36,14 @@
       text-align: center;
       cursor: pointer;
       color: #19191B;
+
       &:first-child {
         border-radius: 10px 0 0 10px;
-        border: 5px solid #F7F7FB;        
-      }            
+        border: 5px solid #F7F7FB;
+      }
     }
-    &_checked {      
+
+    &_checked {
       color: #fff;
       background-color: #5454D4;
       cursor: default;
@@ -53,79 +58,83 @@
     align-items: center;
     min-height: 475px;
   }
+
   &-card {
-    width: 330px;    
+    width: 330px;
     margin-right: 15px;
     margin-top: 10px;
     padding: 30px 25px 25px 30px;
     background: #F8F8F8;
     border-radius: 10px;
+
     &last-child {
       margin-right: 0;
     }
+
     h3 {
       text-align: center;
       font-size: 18px;
       line-height: 28px;
     }
+
     strong {
       display: block;
       margin: 20px 0 30px;
       font-size: 60px;
       font-weight: 700;
-      line-height: 56px;  
-      text-align: center;  
-      color: #1D293F; 
+      line-height: 56px;
+      text-align: center;
+      color: #1D293F;
+
       span {
-        font-size: 28px;        
-      }     
+        font-size: 28px;
+      }
     }
-  }
-  &-description {
-    li {
-      font-family: 'Mulish';
-      font-size: 17px;
-      line-height: 50px;      
-      text-align: center;
-      color: #696871;
+
+    &__description {
+      li {
+        font-family: 'Mulish';
+        font-size: 17px;
+        line-height: 50px;
+        text-align: center;
+        color: #696871;
+      }
+
+      a {
+        display: block;
+        margin: 35px auto 0;
+        width: 285px;
+        padding: 20px;
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
+        color: #5454D4;
+        background-color: #fff;
+        border: 1px solid #EAE9F2;
+        border-radius: 10px;
+        transition: background-color .4s;
+      }
     }
-    a {
-      display: block;
-      margin: 35px auto 0;
-      width: 285px;
-      padding: 20px;
-      font-size: 17px;
-      line-height: 20px;
-      font-weight: 700;
-      text-align: center;
-      color: #5454D4;
-      background-color: #fff;
-      border: 1px solid #EAE9F2;
-      border-radius: 10px;
-      transition: background-color .4s;
-      &:hover {
+
+    &:hover {
+      padding: 60px 25px 25px 30px;
+      width: 375px;
+      min-height: 500px;
+      color: #fff;
+      background-color: #FF7143;
+      box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.32);
+
+      strong,
+      li {
         color: #fff;
-        background-color: #5454D4;
-      }      
+      }
+
+      a {
+        color: #fff;
+        background-color: #9F3919;
+        border: 1px solid #C31A12;
+      }
     }
   }
-  &-recomend {
-    width: 375px;
-    min-height: 500px;    
-    color: #fff;
-    background-color: #FF7143;
-    box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.32);
-    border-radius: 10px;
-    strong, li {
-      color: #fff;
-    }
-    a {
-      color: #fff;
-      background-color: #9F3919;
-      border: 1px solid #C31A12;
-      &:hover {
-        background-color: #c84117;
-      } 
-    }
-  }  
 }
