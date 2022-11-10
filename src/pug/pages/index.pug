@@ -1,15 +1,18 @@
 extends ./../layouts/main.pug
 
 append config
-    - var myTitle = 'Logoipsum'
+    - var myTitle = 'LOGOTYPE'
     - var myDesc = 'Верстка странички с видео ютуб'
-    - var Bootstrap5 = false 
+    - var Bootstrap5 = false
+    - var GoogleFonts = false
+    - var FontAwesome = true
+    - var Fancybox = true 
 
 
 append content    
     include ./../sections/bloksMain/_blockOne.pug
-    include ./../sections/bloksMain/_blockTwo.pug
-    include ./../sections/bloksMain/_blockThree.pug
-    include ./../sections/bloksMain/_blockFour.pug
-    include ./../sections/bloksMain/_blockFive.pug
+    //- include ./../sections/bloksMain/_blockTwo.pug
+    //- include ./../sections/bloksMain/_blockThree.pug
+    //- include ./../sections/bloksMain/_blockFour.pug
+    //- include ./../sections/bloksMain/_blockFive.pug
     //- include ./../sections/bloksMain/_blockSix.pug

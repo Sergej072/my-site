@@ -1,18 +1,32 @@
 header#header-section
-  .container
-    .header
-      .header__logo
-        h1(hidden) Logoipsum
-        img(src="../../../img/Logo.svg", alt="Логотип Logoipsum")
-      nav.header-nav
-        ul.header-nav__list
-          li.header-nav__item
-            a(href='#') Home
-          li.header-nav__item
-            a(href='#') Features
-          li.header-nav__item
-            a(href='#') Pricing         
-          li.header-nav__item
-            a(href='#') Blog
-      button.header__btn Get Started
-      
+  h1(hidden) LOGOTYPE
+  .header
+    .header__top
+      .container
+        .header__contacts
+          <i class="fa-solid fa-phone"></i>
+          a.header__phone(href="tel:380963092145") 38 (096) 309 21 45
+          <i class="fa-sharp fa-solid fa-envelope"></i>
+          a.header__email(href="#") layout585@gmail.com          
+          a.header__btn(data-fancybox href="#hidden") Бесплатная консультация
+          
+    .header__content
+      .container
+        .header__content-inner
+          .header__logo
+            a(href="#")
+              img(src="img/logo.png", alt="")
+          nav.header__menu
+            ul.header__menu_list
+              li.header__menu_item
+                a.header__menu_link(href="") Главная                             
+              li.header__menu_item
+                a.header__menu_link(href="") О компании
+              li.header__menu_item
+                a.header__menu_link(href="") Услуги
+              li.header__menu_item
+                a.header__menu_link(href="") Контакты
+  
+  div(id='hidden')
+    h2 Контент из скрытого div
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat natus aspernatur nobis atque, commodi sint aliquid. Illum, recusandae provident quas minus dolor ut sapiente reiciendis porro ad, aut minima eius!

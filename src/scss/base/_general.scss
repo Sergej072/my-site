@@ -17,81 +17,81 @@
 // 3. Prevent adjustments of font size after orientation changes in iOS.
 // 4. Change the default tap highlight to be completely transparent in iOS.
 
-
-
-$body-font-family: 'Poppins', sans-serif;
+// Размеры
 $body-font-size: 14px;
 $body-font-weight: 400;
-$body-line-height: 15px;
+$body-line-height: 18px;
 $body-text-align: start;
-$body-color: #22262A;
+
+// Цвета
+$body-color: #5e5e5e;
 $body-bg: #fff;
 
-$white-bg: #E5E5E5;
-$green-bg: #E4F5EB;
+$yellow-button: #ffc222;
 
+//  Шрифты
 $opensans-font-family: 'Open Sans', sans-serif;
 $roboto-font-family: 'Roboto', sans-serif;
 $poppins-font-family: 'Poppins', sans-serif;
 $dm-sans-font-family: 'DM Sans', sans-serif;
 $mulish-font-family: 'Mulish', sans-serif;
+$pt-serif-font-family: 'PT Serif', serif;
+
 
 // Для этого проекта
-$white-bg: #fff;
-$button-bg: #22262A;
+
+//   Отдельные насройки проекта
 
 body {
-    color: #696871;
-    background-color: $white-bg;
     padding: 0 5px;
-    font: 400 20px 'DM Sans', Arial, sans-serif;
+    font-size: $body-font-size;
+    font-weight: $body-font-weight;
+    line-height: $body-line-height;
+
+    font-family: $pt-serif-font-family;
+    color:$body-color;
+    background-color: $body-bg;    
 }
 
 a {
+    display: inline-block;
     color: inherit;
     text-decoration: none;
-    transition: .4s all ease;
+    transition: .3s all ease;
 }
 
 ul li,
 ol,
 li {
     list-style: none;
-}
-
-img {
-    max-width: 100%;
-    // max-height: 100%;
-}
-
-button {
-    display: block;
-    width: 210px;
-    padding: 20px 0;
-    border: none;
-    border-radius: 10px;
-    font: 700 17px 'DM Sans', Arial, sans-serif;
-    color: #fff;
-    // background-color: transparent;
-    cursor: pointer;
-    transition: .4s all ease;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;        
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 
 
-.btn-primary {    
-    color: #fff;
-    background-color: $button-bg;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
 
-    &:hover {
-        background-color: #df51c9;
-    }
-}
+// img {
+//     max-width: 100%;
+//      max-height: 100%;
+// }
+
+// button {
+//     display: block;
+//     width: 210px;
+//     padding: 20px 0;
+//     border: none;
+//     border-radius: 10px;
+//     font: 700 17px 'DM Sans', Arial, sans-serif;
+//     color: #fff;
+//     // background-color: transparent;
+//     cursor: pointer;
+//     transition: .4s all ease;
+// }
+
